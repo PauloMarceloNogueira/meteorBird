@@ -1,0 +1,14 @@
+<template name="profileForm">
+  <form class="form-horizontal">
+    {{#with currentUser.profile}}
+      <input type="text" class="form-control" placeholder="{{name}}" value="{{name}}"/>
+      <input type="text" class="form-control" placeholder="{{about}}" value="{{about}}" />
+    {{else}}
+    <input type="text" class="form-control" placeholder="Nome"/>
+    <input type="text" class="form-control" placeholder="Sobre"/>  
+    {{/with}}
+    <button class="btn btn-success">
+      Atualizar
+    </button>
+  </form>
+</template>
