@@ -23,3 +23,6 @@ accounts-ui
 accounts-password
 accounts-facebook
 iron:router
+sanjo:jasmine
+velocity:core
+velocity:html-reporter
