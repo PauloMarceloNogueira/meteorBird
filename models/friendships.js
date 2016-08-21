@@ -38,3 +38,7 @@ Friendships.timelineIds = function(userId) {
   timelineIds.push(userId);
   return timelineIds;
 }
+
+Friendships.followersAndFollowings = function(_id) {
+  return this.find({$or : [{userId : _id},{friendId : _id}]});
+}
